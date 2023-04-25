@@ -1,5 +1,8 @@
 import React from "react";
 import DarkModeToggle from "./DarkModeToggle";
+import Footer from "./Footer";
+
+import "./App.css";
 
 function Weather() {
   let weatherData = {
@@ -60,6 +63,7 @@ function Weather() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

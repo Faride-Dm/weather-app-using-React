@@ -1,0 +1,24 @@
+.footer {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 2.5;
+  color: #fff;
+}
+
+.githubLink {
+  color: #ce6748;
+}
+
+.netlifyLink {
+  color: #ce6748;
+}
+
+@supports (background-clip: text) {
+  .githubLink,
+  .netlifyLink {
+    background-image: linear-gradient(#e19f63, #d16a51);
+    background-clip: text;
+    color: transparent;
+  }
+}
