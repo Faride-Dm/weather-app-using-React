@@ -1,0 +1,43 @@
+.selectedCity {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.showHumidity,
+.showWind,
+.feelingTemperature {
+  opacity: 0.7;
+}
+
+#humid-percent,
+#speed,
+#feel-temp,
+#submit-btn {
+  color: #ce6748;
+}
+
+@supports (background-clip: text) {
+  #humid-percent,
+  #speed,
+  #feel-temp,
+  #submit-btn {
+    background-image: linear-gradient(#e19f63, #d16a51);
+    opacity: 1;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+#input-city {
+  padding: 11px 9px;
+  background-color: transparent;
+  border-color: #ce6748;
+  border-width: 2px;
+}
+
+input#input-city::placeholder {
+  font-weight: 500;
+  color: #ce6748;
+}

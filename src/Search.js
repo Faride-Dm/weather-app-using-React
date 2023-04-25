@@ -40,6 +40,7 @@ function Search() {
             type="search"
             placeholder="Enter a city"
             className="form-control search-input"
+            id="input-city"
             autoComplete="off"
             onChange={updateCity}
           />
@@ -48,6 +49,7 @@ function Search() {
           <input
             type="submit"
             className="btn btn-primary w-100"
+            id="submit-btn"
             value="Search"
           />
         </div>
