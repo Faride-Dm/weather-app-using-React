@@ -30,14 +30,12 @@
   }
 }
 
-#input-city {
-  padding: 11px 9px;
-  background-color: transparent;
-  border-color: #ce6748;
-  border-width: 2px;
+.units {
+  position: relative;
+  top: -12px;
 }
 
-input#input-city::placeholder {
-  font-weight: 500;
-  color: #ce6748;
+.units .active {
+  color: #fff;
+  text-decoration: none;
 }

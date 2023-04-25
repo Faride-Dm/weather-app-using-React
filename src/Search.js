@@ -3,6 +3,7 @@ import axios from "axios";
 
 import "./App.css";
 import "./Weather.css";
+import "./Search.css";
 
 function Search() {
   const [city, setCity] = useState("");
@@ -48,7 +49,7 @@ function Search() {
         <div className="col-3 p-0">
           <input
             type="submit"
-            className="btn btn-primary w-100"
+            className="btn  w-100"
             id="submit-btn"
             value="Search"
           />
