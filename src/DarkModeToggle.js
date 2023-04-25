@@ -1,4 +1,5 @@
 import React from "react";
+import "./DarkModeToggle.css";
 
 function DarkModeToggle() {
   <div className="d-flex darkModeToggle">
