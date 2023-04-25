@@ -1,4 +1,5 @@
 import React from "react";
+import DarkModeToggle from "./DarkModeToggle";
 
 function Weather() {
   let weatherData = {
@@ -15,6 +16,7 @@ function Weather() {
 
   return (
     <div className="Weather">
+      <DarkModeToggle />
       <div className="ontime-city-temperature">
         <div className="row">
           <div className="col-8 current-temp">

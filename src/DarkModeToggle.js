@@ -1,4 +1,4 @@
-import React from "./react";
+import React from "react";
 
 function DarkModeToggle() {
   <div className="d-flex darkModeToggle">
