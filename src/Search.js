@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import "./App.css";
+import "./Weather.css";
+
 function Search() {
   const [city, setCity] = useState("");
   const [loaded, setLoaded] = useState(false);

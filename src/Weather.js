@@ -1,6 +1,7 @@
 import React from "react";
 import DarkModeToggle from "./DarkModeToggle";
 import Footer from "./Footer";
+import Search from "./Search";
 
 import "./App.css";
 
@@ -64,6 +65,7 @@ function Weather() {
             </div>
           </div>
         </div>
+        <Search />
         <Footer />
       </div>
     </body>
