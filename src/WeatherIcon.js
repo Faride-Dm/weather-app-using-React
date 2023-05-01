@@ -1,27 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactAnimatedWeather from "react-animated-weather";
-import axios from "axios";
-
-import "./Weather.css";
-import "./App.css";
 
 export default function WeatherIcon(props) {
-  const [icon, setIcon] = useState("props.weatherData.icon");
-
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=${units}`;
-
-  function showIcon(response) {
-    return setIcon(response.data.weather[0].icon);
-  }
-
-  axios.get(apiUrl).then(showIcon);
+  const codeMapping = {
+    "01d": "CLEAR_DAY",
+    "01n": "CLEAR_NIGHT",
+    "02d": "PARTLY_CLOUDY-DAY",
+    "02n": "PARTLY_CLOUDY-NIGHT",
+    "03d": "PARTLY_CLOUDY-DAY",
+    "03n": "PARTLY_CLOUDY-NIGHT",
+    "04d": "CLOUDY",
+    "04n": "CLOUDY",
+    "09d": "RAIN",
+    "09n": "RAIN",
+    "10d": "RAIN",
+    "10n": "RAIN",
+    "11d": "RAIN",
+    "11n": "RAIN",
+    "13d": "SNOW",
+    "13n": "SNOW",
+    "50d": "FOG",
+    "50n": "FOG",
+  };
 
   return (
     <div className="WeatherIcon">
       <ReactAnimatedWeather
-        icon={setIcon(icon)}
+        icon={codeMapping[props.code]}
         color="#000"
         size={48}
         animate={true}
