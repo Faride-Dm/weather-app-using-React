@@ -1,5 +1,4 @@
 import React from "react";
-import WeatherData from "./WeatherData";
 import Footer from "./Footer";
 import Search from "./Search";
 

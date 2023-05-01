@@ -13,7 +13,8 @@ export default function Search(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
+      temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -50,11 +51,17 @@ export default function Search(props) {
                 className="form-control search-input"
                 id="input-city"
                 autoFocus="on"
+                autoComplete="off"
                 onChange={updateCity}
               />
             </div>
             <div className="col-3">
-              <input type="submit" value="search" className="btn w-100" />
+              <input
+                type="submit"
+                id="submit-btn"
+                value="search"
+                className="btn w-100"
+              />
             </div>
           </div>
         </form>

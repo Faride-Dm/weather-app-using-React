@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 
-import WeatherIcon from "./WeatherIcon";
+// import WeatherIcon from "./WeatherIcon";
+import FormatDate from "./FormatDate";
 
 import "./App.css";
 import "./WeatherData.css";
@@ -12,7 +12,7 @@ export default function WeatherData(props) {
       <div className="ontime-city-temperature">
         <div className="row">
           <div className="col-8 current-temp">
-            <WeatherIcon />
+            {/* <WeatherIcon /> */}
             <br />
             <span className="currentTemp">{props.data.temperature}</span>
             <span className="units">
@@ -23,8 +23,13 @@ export default function WeatherData(props) {
             </span>
           </div>
           <div className="col-4 city">
-            <div className="selectedCity">{props.data.city}</div>
+            <div className="selectedCity">{props.weatherData.city}</div>
             <ul>
+              <li>
+                <span class="showDate" id="date">
+                  <FormatDate date={props.weatherData.date} />
+                </span>
+              </li>
               <li>
                 <span className="showHumidity">
                   {" "}

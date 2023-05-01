@@ -1,17 +1,16 @@
 import React from "react";
 
-function formatDate() {
-  let hours = date.getHours();
+function formatDate(props) {
+  let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
 
-  let minutes = date.getMinutes();
+  let minutes = props.date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
-  let day = date.getDay();
   let days = [
     "Sunday",
     "Monday",
@@ -22,10 +21,9 @@ function formatDate() {
     "Saturday",
   ];
 
-  let weekDay = days[day];
-  dayOfTheWeek.innerHTML = `${weekDay} ${hours}:${minutes} <br />`;
+  let day = days[props.date.getDay()];
 
-  let month = date.getMonth();
+  let month = props.date.getMonth();
   let months = [
     "January",
     "February",
@@ -43,29 +41,29 @@ function formatDate() {
 
   let yearMonths = months[month];
 
-  let dateInMonth = date.getDate();
-  let year = date.getFullYear();
+  let dateInMonth = props.date.getDate();
+  let year = props.date.getFullYear();
 
-  if (yearMonths == "April" || yearMonths == "May" || yearMonths == "June") {
+  if (yearMonths === "April" || yearMonths === "May" || yearMonths === "June") {
     document.getElementById("backGround").style.backgroundImage =
       "url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/047/original/spring.jpg?1677327335)";
   } else if (
-    yearMonths == "July" ||
-    yearMonths == "August" ||
-    yearMonths == "September"
+    yearMonths === "July" ||
+    yearMonths === "August" ||
+    yearMonths === "September"
   ) {
     document.getElementById("backGround").style.backgroundImage =
       "url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/045/original/summer.jpg?1677327246)";
   } else if (
-    yearMonths == "October" ||
-    yearMonths == "November" ||
-    yearMonths == "December"
+    yearMonths === "October" ||
+    yearMonths === "November" ||
+    yearMonths === "December"
   ) {
     document.getElementById("backGround").style.backgroundImage =
       "url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/046/original/autumn.jpg?1677327273)";
   } else if (
-    (yearMonths == "December" && dateInMonth > 23) ||
-    (yearMonths == "January" && dateInMonth < 7)
+    (yearMonths === "December" && dateInMonth > 23) ||
+    (yearMonths === "January" && dateInMonth < 7)
   ) {
     document.getElementById("backGround").style.backgroundImage =
       "url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/054/original/Chrismas.jpg?1677330137)";
@@ -74,7 +72,12 @@ function formatDate() {
       "url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/790/original/winter.jpg?1676478322)";
   }
 
-  return `${weekDay} ${hours}:${minutes} <br /> ${dateInMonth} ${yearMonths} ${year} <br />`;
+  return (
+    <div>
+      {day} {hours}:{minutes} <br /> {dateInMonth} {yearMonths} {year}
+      <br />
+    </div>
+  );
 }
 
-export default formatDate;
+export default formatDate();
