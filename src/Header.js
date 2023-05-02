@@ -1,10 +1,10 @@
 import React from "react";
-import "./DarkModeToggle.css";
+import "./Header.css";
 
-function DarkModeToggle() {
-  <div className="d-flex darkModeToggle">
+function Header() {
+  <div className="d-flex Header">
     <img className="logo" src="/images/logo-shecodes.png" alt="logo" />
-    <input type="checkbox" className="checkbox" />
+    <input type="checkbox" className="checkbox darkModeToggle" />
     <label htmlFor="checkbox" className="label">
       <i className="fas fa-moon"></i>
       <i className="fas fa-sun"></i>
@@ -13,4 +13,4 @@ function DarkModeToggle() {
   </div>;
 }
 
-export default DarkModeToggle;
+export default Header;
