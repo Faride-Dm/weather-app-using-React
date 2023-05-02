@@ -1,0 +1,21 @@
+.currentTemp {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.currentWeatherIcon {
+  margin-left: -15px;
+  max-width: 85px;
+}
+
+.units {
+  position: relative;
+  top: -12px;
+}
+
+.units .active {
+  color: #fff;
+  text-decoration: none;
+}

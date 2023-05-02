@@ -30,16 +30,6 @@
   }
 }
 
-.units {
-  position: relative;
-  top: -12px;
-}
-
-.units .active {
-  color: #fff;
-  text-decoration: none;
-}
-
 .WeatherData canvas {
   margin-right: 10px;
 }

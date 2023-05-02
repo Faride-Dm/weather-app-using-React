@@ -1,15 +1,3 @@
-.currentTemp {
-  font-family: "Roboto", sans-serif;
-  font-size: 35px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.currentWeatherIcon {
-  margin-left: -15px;
-  max-width: 85px;
-}
-
 .ontime-city-temperature {
   text-align: left;
   color: #fff;
