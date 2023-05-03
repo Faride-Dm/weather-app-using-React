@@ -74,10 +74,12 @@ function formatDate(props) {
 
   return (
     <div>
-      {day} {hours}:{minutes} <br /> {dateInMonth} {yearMonths} {year}
+      {day} {hours}:{minutes}
+      <br />
+      {dateInMonth} {yearMonths} {year}
       <br />
     </div>
   );
 }
 
-export default formatDate();
+export default formatDate;

@@ -1,11 +1,22 @@
 // import logo from "./logo.svg";
+import React from "react";
+
+import Header from "./Header";
+import Footer from "./Footer";
+import WeatherSearch from "./WeatherSearch";
+
 import "./App.css";
-import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <body id="backGround">
+        <div className="Weather">
+          <Header />
+          <WeatherSearch defaultCity={"Edinburgh"} />
+          <Footer />
+        </div>
+      </body>
     </div>
   );
 }

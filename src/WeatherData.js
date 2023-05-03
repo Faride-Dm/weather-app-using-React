@@ -23,7 +23,7 @@ export default function WeatherData(props) {
             <ul>
               <li>
                 <span class="showDate" id="date">
-                  <FormatDate date={props.weatherData.date} />
+                  <FormatDate date={props.data.date} />
                 </span>
               </li>
               <li>

@@ -77,3 +77,16 @@ body.dark {
   left: 0;
   margin-top: 60px;
 }
+
+.ontime-city-temperature {
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+}
+
+#humid-percent,
+#speed,
+#feel-temp,
+#submit-btn {
+  color: #ce6748;
+}
