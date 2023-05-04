@@ -19,6 +19,7 @@ export default function WeatherSearch(props) {
       humidity: response.data.main.humidity,
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
+      feeling: response.data.main.feels_like,
     });
   }
 
