@@ -19,7 +19,7 @@ export default function WeatherData(props) {
             <TemperatureUnits celsius={props.data.temperature} />
           </div>
           <div className="col-4 city">
-            <div className="selectedCity">{props.weatherData.city}</div>
+            <div className="selectedCity">{props.data.city}</div>
             <ul>
               <li>
                 <span class="showDate" id="date">
