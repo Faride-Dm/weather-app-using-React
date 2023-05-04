@@ -14,7 +14,6 @@ export default function WeatherData(props) {
         <div className="row">
           <div className="col-8 current-temp">
             <WeatherIcon code={props.data.icon} />
-            <br />
 
             <TemperatureUnits celsius={props.data.temperature} />
           </div>
@@ -30,9 +29,11 @@ export default function WeatherData(props) {
                 <span className="showHumidity">
                   {" "}
                   <br />
-                  Humidity: {props.data.humidity}%,{" "}
+                  Humidity: {props.data.humidity}%{" "}
                 </span>
-                <span className="showWind"> Wind: {props.data.wind} </span>
+              </li>
+              <li>
+                <span className="showWind"> Wind: {props.data.wind} Km/H </span>
               </li>
               <li>
                 <span className="feelingTemperature">

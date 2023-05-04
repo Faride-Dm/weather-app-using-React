@@ -1,3 +1,9 @@
+.backGround {
+  font-family: sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
@@ -15,8 +21,15 @@ h2 {
 
 a {
   color: #ce6748;
-  font-weight: 900;
+  font-weight: 700;
   text-decoration: none;
+}
+
+a .fahrenheit-link {
+  color: #ce6748 !important;
+  font-weight: 900;
+  text-decoration: none !important;
+  cursor: default;
 }
 
 @supports (background-clip: text) {
@@ -27,16 +40,13 @@ a {
   }
 }
 
-.Weather {
+.App {
   max-width: 1000px;
   margin: 50px auto;
   padding: 30px 60px;
   border-radius: 4px;
   box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 20%);
   backdrop-filter: blur(5px);
-  font-family: sans-serif;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .row {
@@ -51,6 +61,10 @@ a {
 .col-8.current-temp {
   left: 0;
   margin-top: 60px;
+}
+
+.showDate {
+  margin-left: 0;
 }
 
 .ontime-city-temperature {
