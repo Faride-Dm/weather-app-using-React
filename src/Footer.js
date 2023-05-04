@@ -5,7 +5,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <p className="footer">
-      This project is coded by <strong>Faride Danesh</strong> and is
+      This project is coded by <strong>Faride Danesh</strong> and is{" "}
       <a
         className="githubLink"
         href="https://github.com/Faride-Dm/Weather-app-using-React"
@@ -13,8 +13,8 @@ function Footer() {
         rel="noopener noreferrer"
       >
         open-sourced on GitHub
-      </a>
-      and hosted on
+      </a>{" "}
+      and hosted on{" "}
       <a
         className="netlifyLink"
         href="https://app.netlify.com"

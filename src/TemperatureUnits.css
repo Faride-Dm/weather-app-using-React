@@ -19,3 +19,10 @@
   color: #fff;
   text-decoration: none;
 }
+
+a .fahrenheit-link {
+  color: #ce6748;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: default;
+}
