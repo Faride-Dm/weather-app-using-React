@@ -15,7 +15,14 @@
   top: -12px;
 }
 
-a .fahrenheit-link {
+.fahrenheit-link a {
+  color: #ce6748;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: default;
+}
+
+.celsius-link a {
   color: #ce6748;
   font-weight: 900;
   text-decoration: none;

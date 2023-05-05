@@ -6,11 +6,14 @@
   color: #fff;
 }
 
-.githubLink {
+.githubLink,
+.netlifyLink {
   color: #ce6748;
 }
 
-.netlifyLink {
+.githubLink:hover,
+.netlifyLink:hover {
+  text-decoration: underline;
   color: #ce6748;
 }
 

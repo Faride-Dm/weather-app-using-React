@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import "./TemperatureUnits.css";
 import "./App.css";
+import "./TemperatureUnits.css";
 
 function TemperatureUnits(props) {
   const [unit, setUnit] = useState("celsius");
@@ -37,7 +37,7 @@ function TemperatureUnits(props) {
       <div className="TemperatureUnits">
         <span className="currentTemp">{Math.round(fahrenheit())}</span>
         <span className="units">
-          <a href="/" onClick={showCelsius}>
+          <a href="/" className="celsius-link" onClick={showCelsius}>
             °C
           </a>{" "}
           | °F

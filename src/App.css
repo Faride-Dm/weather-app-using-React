@@ -20,16 +20,13 @@ h2 {
 }
 
 a {
-  color: #ce6748;
+  color: #ce6748 !important;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-a .fahrenheit-link {
-  color: #ce6748 !important;
-  font-weight: 900;
-  text-decoration: none !important;
-  cursor: default;
+a:hover {
+  text-decoration: underline !important;
 }
 
 @supports (background-clip: text) {
@@ -40,7 +37,7 @@ a .fahrenheit-link {
   }
 }
 
-.App {
+.backGround {
   max-width: 1000px;
   margin: 50px auto;
   padding: 30px 60px;
