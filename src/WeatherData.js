@@ -16,9 +16,15 @@ export default function WeatherData(props) {
       <div className="ontime-city-temperature">
         <div className="row">
           <div className="col-8 current-temp">
-            <WeatherIcon code={props.data.icon} />
+            <div className="clearfix">
+              <span className="float-left">
+                <WeatherIcon code={props.data.icon} size={52} />
+              </span>
 
-            <TemperatureUnits celsius={props.data.temperature} />
+              <span className="float-left">
+                <TemperatureUnits celsius={props.data.temperature} />
+              </span>
+            </div>
           </div>
           <div className="col-4 city">
             <div className="selectedCity">{props.data.city}</div>
