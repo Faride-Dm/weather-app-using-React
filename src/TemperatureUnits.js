@@ -22,7 +22,7 @@ function TemperatureUnits(props) {
 
   if (unit === "celsius") {
     return (
-      <div className="TemperatureUnits">
+      <span className="TemperatureUnits">
         <span className="currentTemp">{Math.round(props.celsius)}</span>
         <span className="units">
           <strong>°C</strong> |{" "}
@@ -30,11 +30,11 @@ function TemperatureUnits(props) {
             °F
           </a>
         </span>
-      </div>
+      </span>
     );
   } else {
     return (
-      <div className="TemperatureUnits">
+      <span className="TemperatureUnits">
         <span className="currentTemp">{Math.round(fahrenheit())}</span>
         <span className="units">
           <a href="/" className="celsius-link" onClick={showCelsius}>
@@ -42,7 +42,7 @@ function TemperatureUnits(props) {
           </a>{" "}
           | °F
         </span>
-      </div>
+      </span>
     );
   }
 }

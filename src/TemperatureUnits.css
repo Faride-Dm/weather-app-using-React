@@ -1,7 +1,7 @@
 .currentTemp {
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
-  font-weight: 700;
+  font-size: 57px;
+  font-weight: 550;
   color: #fff;
 }
 
@@ -12,7 +12,7 @@
 
 .units {
   position: relative;
-  top: -12px;
+  top: -22px;
 }
 
 .fahrenheit-link a {

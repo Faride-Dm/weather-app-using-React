@@ -18,7 +18,7 @@ export default function WeatherData(props) {
           <div className="col-8 current-temp">
             <div className="clearfix">
               <span className="float-left">
-                <WeatherIcon code={props.data.icon} size={52} />
+                <WeatherIcon code={props.data.icon} size={48} />
               </span>
 
               <span className="float-left">
