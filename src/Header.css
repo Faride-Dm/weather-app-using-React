@@ -4,6 +4,11 @@
   width: 200px;
 }
 
+body.dark {
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/053/original/darkmode.jpeg?1677329804);
+  background-size: cover;
+}
+
 .checkbox {
   opacity: 0;
   position: absolute;
