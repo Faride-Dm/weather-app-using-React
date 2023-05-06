@@ -6,6 +6,11 @@
   margin-left: 32px;
 }
 
+.logo {
+  left: 0;
+  width: 90px;
+}
+
 ul {
   margin: 0;
   padding: 0;
