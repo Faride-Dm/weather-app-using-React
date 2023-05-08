@@ -11,7 +11,7 @@ export default function WeatherData(props) {
   return (
     <div className="WeatherData">
       <div className="logo">
-        <img className="logo" src="/images/Logo04.png" alt="logo" />
+        <img className="logo" src="/images/logo.png" alt="logo" />
       </div>
       <div className="ontime-city-temperature">
         <div className="row">
