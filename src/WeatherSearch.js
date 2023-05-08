@@ -4,6 +4,7 @@ import axios from "axios";
 import "./App.css";
 import "./WeatherSearch.css";
 import WeatherData from "./WeatherData";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherSearch(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,6 +13,7 @@ export default function WeatherSearch(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
@@ -67,6 +69,7 @@ export default function WeatherSearch(props) {
             </div>
           </div>
         </form>
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
