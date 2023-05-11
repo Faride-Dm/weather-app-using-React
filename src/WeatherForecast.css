@@ -1,5 +1,10 @@
 .WeatherForecast {
+  margin-top: 50px;
   text-align: center;
+}
+
+.WeatherForecast-day {
+  margin-bottom: 10px;
 }
 
 .WeatherForecast-temperature-max {
