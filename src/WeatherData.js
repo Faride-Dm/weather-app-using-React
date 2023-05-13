@@ -15,7 +15,7 @@ export default function WeatherData(props) {
       </div>
       <div className="ontime-city-temperature">
         <div className="row">
-          <div className="col-sm-8 current-temp">
+          <div className="col-sm-8 mt-3 current-temp">
             <div className="clearfix">
               <span className="float-left">
                 <WeatherIcon code={props.data.icon} size={48} />

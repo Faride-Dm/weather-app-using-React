@@ -2,7 +2,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 55px;
   font-weight: 550;
-  color: #fff;
+  color: #4d4b4b;
 }
 
 .currentWeatherIcon {
@@ -13,6 +13,7 @@
 .units {
   position: relative;
   top: -22px;
+  color: #4d4b4b;
 }
 
 .fahrenheit-link a {
