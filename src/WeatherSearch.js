@@ -5,6 +5,7 @@ import "./App.css";
 import "./WeatherSearch.css";
 import WeatherData from "./WeatherData";
 import WeatherForecast from "./WeatherForecast";
+import { RingLoader } from "react-spinners";
 
 export default function WeatherSearch(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -74,6 +75,6 @@ export default function WeatherSearch(props) {
     );
   } else {
     search();
-    return "loading...";
+    return <RingLoader color="#ce6748" />;
   }
 }
