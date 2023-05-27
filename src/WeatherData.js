@@ -3,6 +3,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import FormatDate from "./FormatDate";
 import TemperatureUnits from "./TemperatureUnits";
+import DarkModeToggle from "./DarkModeToggle";
 
 import "./App.css";
 import "./WeatherData.css";
@@ -10,8 +11,13 @@ import "./WeatherData.css";
 export default function WeatherData(props) {
   return (
     <div className="WeatherData">
-      <div className="logo">
-        <img className="logo" src="/images/logo.png" alt="logo" />
+      <div className="row header d-flex">
+        <div className="col-9 logo">
+          <img className="logo" src="/images/logo.png" alt="logo" />
+        </div>
+        <div className="col-3">
+          <DarkModeToggle />
+        </div>
       </div>
       <div className="ontime-city-temperature">
         <div className="row">
