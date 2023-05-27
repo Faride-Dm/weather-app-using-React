@@ -10,7 +10,7 @@ function DarkModeToggle() {
   return (
     <div className="DarkModeToggle">
       <header className="App-header">
-        <h1 className="text-warning">Dark/Light mode</h1>
+        {/* <p className="text-warning">Dark/Light mode</p> */}
         <InputGroup>
           <ThemeContext.Consumer>
             {({ changeTheme }) => (
@@ -22,7 +22,7 @@ function DarkModeToggle() {
                 }}
               >
                 <i className={darkMode ? "fas fa-sun" : "fas fa-moon"}></i>
-                <span className="d-lg-none d-md-block">Switch mode</span>
+                {/* <span className="d-lg-none d-md-block">Switch mode</span> */}
               </Button>
             )}
           </ThemeContext.Consumer>

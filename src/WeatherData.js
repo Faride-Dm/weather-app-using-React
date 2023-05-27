@@ -12,10 +12,10 @@ export default function WeatherData(props) {
   return (
     <div className="WeatherData">
       <div className="row header d-flex">
-        <div className="col-9 logo">
+        <div className="col-11 logo">
           <img className="logo" src="/images/logo.png" alt="logo" />
         </div>
-        <div className="col-3">
+        <div className="col-1 p-0">
           <DarkModeToggle />
         </div>
       </div>
